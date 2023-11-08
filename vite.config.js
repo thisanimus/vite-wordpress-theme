@@ -15,13 +15,6 @@ export default defineConfig(({ command }) => {
 				},
 			},
 		},
-		css: {
-			preprocessorOptions: {
-				scss: {
-					additionalData: `@import "./src/base/functions.scss";`,
-				},
-			},
-		},
 		plugins: [
 			mkcert(),
 			ViteRestart({

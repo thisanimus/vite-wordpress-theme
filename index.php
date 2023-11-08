@@ -74,6 +74,16 @@
 				<p>Sorry, we couldn't find your page.</p>
 			<?php endif; ?>
 		<?php endif; ?>
+
+		<?php get_template_part(
+			'partials/dialog/dialog',
+			null,
+			[
+				'id'	=> 'my-dialog',
+				'content'	=> '<p>Hey there! This is a dialog</p>',
+				'button_text' => 'Open dialog box'
+			]
+		); ?>
 	</main>
 	<footer>
 

@@ -1,0 +1,12 @@
+dialog.dialog {
+	border: 2px solid #ccc;
+	border-radius: 0.25rem;
+	background: #fff;
+	margin: auto;
+	padding: 1rem;
+	max-width: calc(100% - 2rem);
+	max-height: calc(100% - 2rem);
+}
+dialog.dialog::backdrop {
+	background: rgba(0, 0, 0, 0.8);
+}
