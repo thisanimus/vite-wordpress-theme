@@ -1,3 +1,4 @@
+![Vite Wordpress](screenshot.svg)
 # Vite for Wordpress
 
 This is an adapter that allows you to use Vite to power a local dev environment for Wordpress.
