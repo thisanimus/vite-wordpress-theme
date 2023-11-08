@@ -9,6 +9,9 @@
 		"build": "vite build"
 	},
 	"license": "MIT",
+	"dependencies": {
+		"js-cookie": "latest"
+	},
 	"devDependencies": {
 		"dotenv": "latest",
 		"sass": "latest",

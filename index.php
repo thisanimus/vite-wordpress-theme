@@ -76,7 +76,7 @@
 		<?php endif; ?>
 
 		<?php get_template_part(
-			'partials/dialog/dialog',
+			'template-parts/dialog/dialog',
 			null,
 			[
 				'id'	=> 'my-dialog',
