@@ -15,6 +15,5 @@
 		"vite": "latest",
 		"vite-plugin-restart": "latest",
 		"vite-plugin-mkcert": "latest"
-	},
-	"homepage": "https://deepspacerobots.com"
+	}
 }
