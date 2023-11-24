@@ -2,6 +2,7 @@
 	"name": "wp-vite",
 	"version": "1.0.0",
 	"description": "A taskrunner for building websites.",
+	"type": "module",
 	"main": "index.php",
 	"scripts": {
 		"dev": "NODE_ENV=development vite & vite build --watch",

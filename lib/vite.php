@@ -69,7 +69,7 @@ class WPVite {
 	 *               If the manifest file or specific assets are not found, empty arrays are returned.
 	 */
 	public function getProductionAssets() {
-		$manifest = json_decode(file_get_contents($this->distPath . '/manifest.json'), true);
+		$manifest = json_decode(file_get_contents($this->distPath . '/.vite/manifest.json'), true);
 		$filelist = [
 			'css' => [],
 			'js' => [],
