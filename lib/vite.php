@@ -129,7 +129,9 @@ class WPVite {
 		$i = 0;
 		foreach ($filelist['js'] as $file) {
 			$i++;
-			wp_enqueue_script($this->wpEnqueueId . '-script-' . $i, $this->distUri . '/' . $file, $this->jsDeps, '', true);
+			$id = $this->wpEnqueueId . '-script-' . $i;
+			$path = $this->distUri . '/' . $file;
+			wp_enqueue_script($id, $path, $this->jsDeps, '1.0.0', ['strategy'  => 'defer']);
 		}
 	}
 }
