@@ -7,7 +7,7 @@ if (import.meta.hot) {
 }
 
 // SCSS
-import '../src/main.scss';
+import '../src/main.css';
 
 // Import local js
 import Dialog from '../template-parts/dialog/dialog.js';

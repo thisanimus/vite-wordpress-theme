@@ -1,6 +1,7 @@
 import ViteRestart from 'vite-plugin-restart';
 import { defineConfig } from 'vite';
 import mkcert from 'vite-plugin-mkcert';
+import path from 'path';
 import 'dotenv/config';
 
 export default defineConfig(({ command }) => {
@@ -21,6 +22,11 @@ export default defineConfig(({ command }) => {
 				reload: ['/**/*.html', '/**/*.twig', '/**/*.php', '!vendor/**/*'],
 			}),
 		],
+		resolve: {
+			alias: {
+				'@': path.resolve(__dirname, 'src'),
+			},
+		},
 		server: {
 			https: process.env.VITE_PROTOCOL === 'https',
 			cors: true,
