@@ -15,7 +15,6 @@
 	},
 	"devDependencies": {
 		"dotenv": "latest",
-		"sass": "latest",
 		"vite": "latest",
 		"vite-plugin-restart": "latest",
 		"vite-plugin-mkcert": "latest"
