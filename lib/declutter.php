@@ -32,16 +32,12 @@ add_action('admin_menu', function () {
 	remove_menu_page('edit-comments.php');
 });
 
-// Remove comments links from admin bar
-add_action('init', function () {
+// Remove comment-reply.min.js from footer
+function clean_header_hook() {
+	wp_deregister_script('comment-reply');
+
 	if (is_admin_bar_showing()) {
 		remove_action('admin_bar_menu', 'wp_admin_bar_comments_menu', 60);
 	}
-});
-
-
-// Remove comment-reply.min.js from footer
-function crunchify_clean_header_hook() {
-	wp_deregister_script('comment-reply');
 }
-add_action('init', 'crunchify_clean_header_hook');
+add_action('init', 'clean_header_hook');
