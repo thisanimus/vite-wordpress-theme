@@ -15,7 +15,7 @@ npm i
 ```
 
 ```sh
-npm run build
+npm run dev
 ```
 
 ## Important files
