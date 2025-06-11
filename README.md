@@ -10,6 +10,14 @@ Assumes you're running Wordpress in [Local](https://localwp.com) using the "Site
 
 ## Setup
 
+In your local wp_config.php, set the constant WP_VITE_ENV
+
+```php
+define("WP_VITE_ENV", "development");
+```
+
+cd to your theme dir and run
+
 ```sh
 npm i
 ```

@@ -17,7 +17,7 @@ class WPVite {
 		$this->wpEnqueueId = $env['WP_ENQUEUE_ID'];
 		$this->server = $env['VITE_PROTOCOL'] . '://' . $env['VITE_HOST'] . ':' . $env['VITE_PORT'];
 		$this->entryPoint = $env['VITE_ENTRY_POINT'];
-		$this->viteIsRunning = (isset($env['NODE_ENV']) && $env['NODE_ENV'] == 'development') ? true : $this->checkServer();
+		$this->viteIsRunning = defined('WP_VITE_ENV') ?  $this->checkServer() : false;
 		$this->init();
 	}
 
